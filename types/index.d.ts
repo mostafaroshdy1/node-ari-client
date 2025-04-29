@@ -13,10 +13,10 @@ export function connect(
     baseUrl: string,
     user: string,
     pass: string,
-    options: {
-        retryDelay: number;
-        maxRetries: number;
-        retryMaxDelay: number;
+    options?: {
+        retryDelay?: number;
+        maxRetries?: number;
+        retryMaxDelay?: number;
     },
     callback?: (err: Error, client: Client) => void
 ): Promise<Client>;
